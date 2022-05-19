@@ -34,6 +34,7 @@ public class HomePage extends Utility {
 
     public void clickOnDressesLink() {
         Reporter.log("clicking on Dresses link" + dressesLink.toString()+"<br>");
+        System.out.println(dressesLink);
         clickOnElement(dressesLink);
     }
 
@@ -49,7 +50,9 @@ public class HomePage extends Utility {
 
     public String verifyLogo() {
         Reporter.log("Verifying Logo " + logoLink.toString()+"<br>");
+        System.out.println("Logo Link is : "+ logoLink);
         return getTextFromElement(logoLink);
+
     }
 
     public String signInLinkVerify() {
